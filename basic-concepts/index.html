@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Learnig sheet</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+      
+</script>
+<body style="background-color: rgb(189, 183, 30);">
+    <div ng-app = "">
+     <p>Write some value in the below input box..</p>
+     <p>Name: </p><input type="text" ng-model = "name"/>
+     <p ng-bind = "name"></p>
+    </div>
+    <div>
+          <p>The anugular directives are html attributes and prefix with ng</p>
+          <h3>About the span element</h3>
+          <p>Span element used to apply the css or some liberay specfic value or id assigments like boot strap, 
+            for example if we have a one element, we can have a inline element from an element, so we can apply 
+             a different style of fonts
+          </p>
+          <h4>About ng-init directives</h4>
+
+        <p>This will be used to intialize the values in angualr</p>
+        <div ng-app = "" ng-init = "name1 = 'Kalaiyarasan'">
+            <p>The name is <span ng-bind = "name1"></span></p>
+
+        </div>
+        <p>The above example will not be execute, becuuse the ng-app directives shold have only one in a angular project</p>
+       
+        <h3>The basic directives from Angular</h3>
+        <h4>ng-init :<span>This for intialize the values in the div element</span></h4>
+        <h4>ng-bind :<span>This is for bind the value based on the directives name</span></h4>
+        <h4>ng-model :<span>This is for mention target the value form an input field</span></h4>
+        <h4>ng-app :<span>This will tell the parent element of a angular app/project</span></h4>
+        
+    </div>
+    <div>
+          <p>Let's talk about the derivatived prefix with data for the valid html</p>
+          <p>The HTML 5 has derived a standrards for a custom attributes, since all Angular derivatives are custom attributes, require to prefix with data 
+            . So that the hmtl page will become valid and no validation error will be getting </p>
+    </div>
+    <div>
+        <h4>About the custom Attribute</h4>
+        <p>Custom attribute is required store the date in element it self and take data to the 
+            java script functions.
+
+        </p>
+        <p>The popural frameworks like Angular, bootstrap and React are using custom 
+            attributes to get the data 
+        </p>
+        <p>Example for custom attribute</p>
+        <p>Note* As per the html5 standards, the cusmtom attributs should prefix with data</p>
+        <div data-custom-attribute = "name = 'customAttribut'"></div>
+
+    </div>
+
+</body>
+<script>
+      var id = document.getElementById('');
+</script>
+</html>
